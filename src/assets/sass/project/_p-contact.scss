@@ -1,0 +1,53 @@
+@use "../global" as global;
+
+.p-contact {
+  padding-top: 70px;
+  background: global.$main-color;
+  padding-bottom: 30px;
+  position: relative;
+
+  @include global.mq("md") {
+    padding-top: 101px;
+  }
+}
+
+.p-contact__inner {
+}
+
+.l-inner {
+}
+
+.p-contact__heading {
+}
+
+.c-section-heading {
+}
+
+.p-contact__text {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 40px;
+
+  @include global.mq("md") {
+    margin-top: 67px;
+  }
+}
+
+.p-contact__decoration {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  // width: 180px;
+  width: clamp(11.25rem, 9.5rem + 8.75vw, 16.5rem);
+
+  @include global.mq("md") {
+    // width: 200px;
+    top: -55px;
+  }
+
+  @include global.mq("lg") {
+    // width: 264px;
+    top: -81px;
+  }
+}

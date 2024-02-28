@@ -1,0 +1,15 @@
+@use "../global" as global;
+
+.c-section-heading {
+  font-weight: 700;
+  text-align: center;
+  font-size: 22px;
+
+  @include global.mq("md") {
+    font-size: 28px;
+  }
+
+  @include global.mq("xl") {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,44 @@
+@use "../global" as global;
+
+.p-thanks {
+  background: global.$main-color;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  height: calc(100vh - 434px);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.p-thanks__inner {
+  max-width: 800px;
+}
+.p-thanks__heading {
+}
+
+.c-section-heading {
+}
+
+.p-thanks__text {
+}
+
+.p-contact__text {
+}
+
+.p-thanks__box {
+  padding: 50px;
+  background: #fff;
+  max-width: 600px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.p-thanks__box-title {
+}
+
+.p-thanks__box-text {
+  margin-top: 50px;
+  color: #37a9cc;
+}

@@ -1,0 +1,81 @@
+@use "../global" as global;
+
+.p-faq__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-faq-box {
+  &.is-open {
+    .p-faq-box__head {
+      &::after {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}
+
+.p-faq-box__head {
+  padding: 12px 30px 12px 13px;
+  min-height: 50px;
+  background: #fff;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  vertical-align: middle;
+  // min-height: 80px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 14px;
+    width: 16px;
+    height: 10px;
+    display: block;
+    background: url(../img/faq_arrow.svg) no-repeat center center / contain;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+  }
+}
+
+.js-accordion {
+}
+
+.p-faq-box__head-icon {
+  font-family: global.$ff-en;
+  color: global.$text-color;
+  font-weight: 700;
+  font-size: 20px;
+
+  @include global.mq("sm") {
+    font-size: 24px;
+  }
+}
+
+.p-faq-box__head-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: global.$text-color;
+
+  @include global.mq("sm") {
+    font-size: 18px;
+  }
+}
+
+.p-faq-box__body {
+}
+
+.p-faq-box__a {
+}
+
+.p-faq-box__a-icon {
+}
+
+.p-faq-box__a-text {
+  margin-top: 24px;
+  line-height: 1.5;
+}

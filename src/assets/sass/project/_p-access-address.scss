@@ -1,0 +1,35 @@
+@use "../global" as global;
+
+.p-access-address {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+.p-access-address__title {
+  font-size: 16px;
+  font-weight: 700;
+  width: 38%;
+  border-top: 1px solid #c6c6c6;
+  padding-top: 21px;
+  padding-bottom: 19px;
+  vertical-align: middle;
+
+  @include global.mq("lg") {
+    font-size: 18px;
+  }
+}
+
+.p-access-address__text {
+  font-size: 16px;
+  font-weight: 700;
+  width: 62%;
+  border-top: 1px solid #c6c6c6;
+  padding-top: 21px;
+  padding-bottom: 19px;
+  vertical-align: middle;
+
+  @include global.mq("lg") {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,43 @@
+@use "../global" as global;
+
+// ---
+// 非表示
+// ---
+
+.u-hidden-sp {
+  display: none;
+
+  @include global.mq("sm") {
+    display: block;
+  }
+}
+
+@include global.mq(sm) {
+  .u-hidden-sm {
+    display: none;
+  }
+}
+
+@include global.mq(md) {
+  .u-hidden-md {
+    display: none;
+  }
+}
+
+@include global.mq(lg) {
+  .u-hidden-lg {
+    display: none;
+  }
+}
+
+@include global.mq(xl) {
+  .u-hidden-xl {
+    display: none;
+  }
+}
+
+// .u-hidden-sp {
+//   // スマホ時に非表示
+
+//   display: none;
+// }

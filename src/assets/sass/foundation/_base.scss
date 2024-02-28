@@ -1,0 +1,28 @@
+@use "../global" as global;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: global.$text-color;
+  font-family: global.$ff-base;
+  font-weight: global.$fw-base;
+  font-size: global.$fz-base;
+  font-style: normal;
+  line-height: global.$lh-base;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

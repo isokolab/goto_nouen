@@ -1,0 +1,58 @@
+@use "../global" as global;
+
+.p-fv {
+  background: url(../img/fv_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 667px;
+  @include global.mq("md") {
+    height: 854px;
+  }
+}
+
+.p-fv__boxes {
+  position: absolute;
+  top: 63.4%;
+  left: 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  @include global.mq("md") {
+    flex-direction: row-reverse;
+    gap: 21px;
+    top: 7rem;
+    right: 5rem;
+  }
+  @include global.mq("xl") {
+    right: 9.1rem;
+  }
+}
+
+.p-fv__boxes-item {
+}
+
+.p-fv__boxes-item-text {
+  background-color: #fff;
+  padding: 7px;
+  display: inline-block;
+  font-size: clamp(1.5rem, 1.333rem + 0.83vw, 2rem);
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+
+  @include global.mq("md") {
+    writing-mode: vertical-rl;
+    letter-spacing: 0.5em;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 9px;
+    padding-bottom: 0;
+    margin: 0 auto;
+    margin-bottom: -0.5em;
+    max-height: 432px;
+  }
+}

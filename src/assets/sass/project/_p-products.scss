@@ -1,0 +1,39 @@
+@use "../global" as global;
+
+.p-products {
+  background: global.$main-color;
+  padding-bottom: 88px;
+}
+
+.l-inner {
+}
+
+.p-products__heading {
+}
+
+.c-section-heading {
+}
+
+.p-products__slider {
+  // overflow: visible;
+  margin-top: 91px;
+}
+
+.swiper {
+}
+
+.p-products__swiper {
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+  padding-bottom: 6px;
+}
+
+.swiper-slide {
+  width: 264px;
+}
+
+.p-product__slide {
+  // width: 264px;
+}

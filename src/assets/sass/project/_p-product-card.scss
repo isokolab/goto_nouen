@@ -1,0 +1,37 @@
+@use "../global" as global;
+
+.p-product-card {
+  // width: 240px;
+  background: #fff;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  // margin-block: 10px;
+  display: block;
+  height: 331px;
+
+  @include global.mq("sm") {
+    width: 264px;
+  }
+}
+
+.p-product-card__img {
+  // width: 264px;
+  text-align: center;
+}
+
+.p-product-card__contents {
+  padding: 16px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 165px;
+  // gap: 38px;
+}
+
+.p-product-card__contents-text {
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.p-product-card__contents-price {
+}

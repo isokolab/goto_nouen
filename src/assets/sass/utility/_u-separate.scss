@@ -1,0 +1,8 @@
+@use "../global" as global;
+
+.u-separate {
+  padding-top: 70px;
+  @include global.mq("md") {
+    padding-top: 91px;
+  }
+}

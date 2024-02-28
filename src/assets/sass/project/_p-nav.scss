@@ -1,0 +1,113 @@
+@use "../global" as global;
+
+.p-header-wrapper {
+  margin: 0 auto;
+  background: global.$main-color;
+}
+
+.p-header {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -72px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: global.$main-color;
+    border-radius: 50%;
+    width: 154px;
+    height: 154px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: url(../img/logo_cow.svg), no-repeat center center / contain;
+    top: -43px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96px;
+    height: 96px;
+  }
+}
+
+.p-nav {
+  background: global.$main-color;
+  padding-top: 53px;
+  padding-bottom: 45px;
+  position: relative;
+  max-width: calc(982px + 20px * 2);
+
+  justify-content: center;
+  display: none;
+
+  @include global.mq("lg") {
+    display: flex;
+    margin-top: 90px;
+  }
+
+  @include global.mq("xl") {
+    // margin-right: 11.3rem;
+
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1279px) {
+  .p-nav {
+    // justify-content: center;
+    margin-left: 9%;
+    margin-right: 14%;
+    // margin-top: 0;
+  }
+}
+
+.p-nav__list {
+  display: flex;
+  gap: 50px;
+  // justify-content: space-between;
+  padding-top: 37px;
+  padding-bottom: 40px;
+  // width: 982px;
+  justify-content: center;
+
+  @include global.mq("xl") {
+    gap: 39px;
+  }
+}
+
+.p-nav__list-item {
+  font-weight: 700;
+
+  a {
+    display: block;
+  }
+
+  @include global.mq("xl") {
+    &:nth-child(3) {
+      margin-right: 21.18em;
+    }
+  }
+}
+
+.p-nav__logo {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 2;
+  width: 300px;
+  top: 53px;
+
+  img {
+    width: 300px;
+  }
+}

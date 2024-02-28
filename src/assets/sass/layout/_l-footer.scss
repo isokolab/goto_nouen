@@ -1,0 +1,95 @@
+@use "../global" as global;
+
+.l-footer {
+  padding-top: 24px;
+  position: relative;
+}
+
+.l-footer__inner {
+}
+
+.l-inner {
+}
+
+.l-footer__logo {
+}
+
+.l-footer__logo-cow {
+  width: 57px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include global.mq("md") {
+    width: 96px;
+  }
+}
+
+.l-footer__logo-en {
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include global.mq("md") {
+    width: 300px;
+    margin-top: -2px;
+  }
+}
+
+.l-footer__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 33px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  @include global.mq("lg") {
+    flex-direction: row;
+  }
+}
+
+.l-footer__menu-item {
+  font-weight: 700;
+}
+
+.l-footer__decoration-left {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 150px;
+
+  @include global.mq("sm") {
+    width: 220px;
+  }
+
+  @include global.mq("xl") {
+    width: 297px;
+  }
+}
+
+.l-footer__decoration-right {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  width: 118px;
+
+  @include global.mq("sm") {
+    width: 175px;
+  }
+
+  @include global.mq("xl") {
+    width: 237px;
+  }
+}
+
+.l-footer__copyright {
+  padding-top: 21px;
+  padding-bottom: 22px;
+  background: #d9d9d9;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 97px;
+}
